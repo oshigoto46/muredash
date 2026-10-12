@@ -32,6 +32,7 @@ html,body{height:100%;margin:0;overflow:hidden;background:var(--sky-top);color:v
 @keyframes pop{0%{opacity:0;transform:translate(-50%,-30%) scale(.6)}20%{opacity:1;transform:translate(-50%,-60%) scale(1.15)}100%{opacity:0;transform:translate(-50%,-160%) scale(1)}}
 #hint{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 36px);transform:translateX(-50%);font-family:var(--display);font-size:16px;color:var(--ink);opacity:.55;letter-spacing:.1em;pointer-events:none;transition:opacity .4s}
 #ov{position:absolute;inset:0;display:grid;place-items:center;padding:16px;background:rgba(42,33,64,.18)}
+#ov[hidden]{display:none}
 .card{width:min(340px,100%);background:var(--card);border-radius:24px;padding:28px 24px 24px;text-align:center;display:grid;gap:14px;box-shadow:0 18px 50px rgba(42,33,64,.25)}
 .card h1{margin:0;font-family:var(--display);font-weight:400;font-size:44px;line-height:1.02;letter-spacing:.02em;text-wrap:balance}
 .card h1 .b{color:var(--blue)} .card h1 .r{color:var(--red)}
